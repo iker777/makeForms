@@ -1,0 +1,57 @@
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: #202731;
+  overflow-x: hidden;
+}
+section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20vw;
+}
+.blue{
+  background-color: rgb(77, 77, 216);
+}
+.curve{
+  position: absolute;
+  height: 225px;
+  width: 100%;
+  bottom: 0;
+}
+.curve::before{
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #202731;
+  transform: translate(85%, 60%);
+}
+.curve::after{
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: rgb(77, 77, 216);
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}
+.bubble:after {
+  content: '';
+  border-top-left-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  height: 85%;
+  width: 100%;
+  background-color: #0f0f10;
+  z-index: -1;
+}
+.red{
+  background-color: rgb(197, 40, 40);
+}
